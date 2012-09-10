@@ -1,7 +1,8 @@
-globus-gridmap-callout-error (0.3-3~emi) unstable; urgency=low
+globus-gridmap-callout-error (0.3-4~emi) unstable; urgency=low
 
   * Local package for EMI.
   * Backport for squeeze.
+  * No doc or dbg packages.
 
  -- Valery Tschopp <valery.tschopp@switch.ch>  Mon, 10 Sep 2012 16:01:31 +0200
 

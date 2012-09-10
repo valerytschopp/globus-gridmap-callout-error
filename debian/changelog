@@ -1,3 +1,9 @@
+globus-gridmap-callout-error (0.3-3~bpo60+1) unstable; urgency=low
+
+  * Backport for squeeze.
+
+ -- Valery Tschopp <valery.tschopp@switch.ch>  Mon, 10 Sep 2012 16:01:31 +0200
+
 globus-gridmap-callout-error (0.3-3) unstable; urgency=low
 
   * Use system jquery script

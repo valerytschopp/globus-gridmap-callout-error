@@ -1,10 +1,9 @@
 Source: globus-gridmap-callout-error
 Priority: optional
 Maintainer: Mattias Ellert <mattias.ellert@fysast.uu.se>
-Build-Depends: debhelper (>= 5), autotools-dev, grid-packaging-tools, libglobus-common-dev (>= 3), libglobus-gssapi-error-dev (>= 2), globus-core (>= 5.15-5), doxygen-latex, graphviz, texlive-fonts-recommended, texlive-font-utils, ghostscript
-Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 5), autotools-dev, grid-packaging-tools, libglobus-common-dev (>= 3), libglobus-gssapi-error-dev (>= 2), globus-core (>= 5.15-5)
+Standards-Version: 3.9.1
 Section: net
-DM-Upload-Allowed: yes
 Vcs-Browser: http://svn.nordugrid.org/trac/packaging/browser/debian/globus-gridmap-callout-error
 Vcs-Svn: http://svn.nordugrid.org/repos/packaging/debian/globus-gridmap-callout-error
 Homepage: http://www.globus.org/
@@ -27,7 +26,6 @@ Package: libglobus-gridmap-callout-error-dev
 Section: libdevel
 Architecture: any
 Depends: libglobus-gridmap-callout-error0 (= ${binary:Version}), ${misc:Depends}, libglobus-common-dev (>= 3), libglobus-gssapi-error-dev (>= 2), globus-core (>= 4)
-Recommends: libglobus-gridmap-callout-error-doc (= ${binary:Version})
 Description: Globus Toolkit - Globus Gridmap Callout Errors Development Files
  The Globus Toolkit is an open source software toolkit used for
  building Grid systems and applications. It is being developed by the
@@ -37,20 +35,6 @@ Description: Globus Toolkit - Globus Gridmap Callout Errors Development Files
  .
  The libglobus-gridmap-callout-error-dev package contains:
  Globus Gridmap Callout Errors Development Files
-
-Package: libglobus-gridmap-callout-error-doc
-Section: doc
-Architecture: any
-Depends: libglobus-gridmap-callout-error-dev (= ${binary:Version}), ${misc:Depends}, ${js:Depends}
-Description: Globus Toolkit - Globus Gridmap Callout Errors Documentation Files
- The Globus Toolkit is an open source software toolkit used for
- building Grid systems and applications. It is being developed by the
- Globus Alliance and many others all over the world. A growing number
- of projects and companies are using the Globus Toolkit to unlock the
- potential of grids for their cause.
- .
- The libglobus-gridmap-callout-error-doc package contains:
- Globus Gridmap Callout Errors Documentation Files
 
 Package: globus-gridmap-callout-error-dbg
 Section: debug

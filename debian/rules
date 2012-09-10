@@ -91,8 +91,7 @@ configure-stamp: sed-stamp
 	   --prefix=$(_prefix) \
 	   --mandir='$${datadir}/man' \
 	   --infodir='$${datadir}/info' \
-	   --with-flavor=$(flavor) \
-	   --enable-doxygen
+	   --with-flavor=$(flavor)
 
 	touch $@
 

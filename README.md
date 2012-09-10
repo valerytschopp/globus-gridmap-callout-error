@@ -26,7 +26,7 @@ Prepare the build:
 
     mkdir debbuild
     cp -v globus-gridmap-callout-error_0.3.orig.tar.gz debbuild
-    tar -C debuild -xvf globus-gridmap-callout-error_0.3.orig.tar.gz
+    tar -C debbuild -xvf globus-gridmap-callout-error_0.3.orig.tar.gz
     cp -vr debian debbuild/globus-gridmap-callout-error-0.3
 
 To build the source package:

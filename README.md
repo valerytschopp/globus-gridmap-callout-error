@@ -22,4 +22,20 @@ Get the upstream source:
 
     make -f debian/rules get-orig-source
 
+Prepare the build:
 
+    mkdir debbuild
+    cp -v globus-gridmap-callout-error_0.3.orig.tar.gz debbuild
+    tar -C debuild -xvf globus-gridmap-callout-error_0.3.orig.tar.gz
+    cp -vr debian debbuild/globus-gridmap-callout-error-0.3
+
+To build the source package:
+
+    cd debbuild
+    dpkg-source -b globus-gridmap-callout-error-0.3
+    
+    
+To build the binary packages:
+
+    cd debbuild/globus-gridmap-callout-error-0.3
+    debuild -us -uc

@@ -165,10 +165,10 @@ install: build-stamp
 	  $(INSTALLDIR)$(_libdir)/pkgconfig/$(name).pc
 
 	# Move documentation to default debian location
-	mv $(INSTALLDIR)$(_docdir)/$(_name) \
-	  $(INSTALLDIR)$(_docdir)/lib$(name)-dev
-	sed s!doc/$(_name)!doc/lib$(name)-dev! \
-	  -i $(GLOBUSPACKAGEDIR)/$(_name)/noflavor_doc.filelist
+	#mv $(INSTALLDIR)$(_docdir)/$(_name) \
+	#  $(INSTALLDIR)$(_docdir)/lib$(name)-dev
+	#sed s!doc/$(_name)!doc/lib$(name)-dev! \
+	#  -i $(GLOBUSPACKAGEDIR)/$(_name)/noflavor_doc.filelist
 
 	# Use system jquery script
 	if [ -r $(INSTALLDIR)$(_docdir)/lib$(name)-dev/html/jquery.js ] ; then \
@@ -198,7 +198,7 @@ binary-arch: install
 	dh_testdir
 	dh_testroot
 	mkdir -p debian/lib$(name)-doc$(_docdir)
-	ln -s lib$(name)-dev debian/lib$(name)-doc$(_docdir)/lib$(name)-doc
+	ln -fs lib$(name)-dev debian/lib$(name)-doc$(_docdir)/lib$(name)-doc
 	dh_installchangelogs
 	dh_installdocs debian/README
 	dh_install --fail-missing

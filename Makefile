@@ -1,9 +1,13 @@
 name=globus-gridmap-callout-error
+deb_name=libglobus-gridmap-callout-error
 version=0.3
 
 debbuild_dir=$(CURDIR)/debbuild
 tgz_dir=$(CURDIR)/tgz
 deb_dir=$(CURDIR)/debs
+
+
+all: deb-src
 
 clean:
 	@echo "Cleaning..."
